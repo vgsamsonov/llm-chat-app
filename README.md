@@ -33,7 +33,7 @@ alembic upgrade head
 
 ## Running the Application
 ```powershell
-uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+uvicorn app.main:app --reload
 python -m http.server 5173 -d frontend
 ```
 Access the application at http://localhost:5173
