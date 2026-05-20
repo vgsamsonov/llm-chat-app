@@ -14,28 +14,28 @@ This project implements a local LLM-powered chat application with user authentic
 
 ### 1. Environment Preparation
 Create and activate a virtual environment, then install dependencies:
-'''powershell
+```powershell
 python -m venv venv
 .\venv\Scripts\activate
 pip install -r requirements.txt
-'''
+```
 
 ### 2. Environment Configuration
-'''powershell
+```powershell
 copy .env.example .env
-'''
+```
 
 ### 3. Database and Redis Initialization
-'''powershell
+```powershell
 docker compose up -d
 alembic upgrade head
-'''
+```
 
 ## Running the Application
-'''powershell
+```powershell
 uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 python -m http.server 5173 -d frontend
-'''
+```
 Access the application at http://localhost:5173
 
 ## Architecture
