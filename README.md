@@ -1,6 +1,6 @@
 # LLM Chat Application
 
-Samsonov Vladimir N4150c
+Samsonov Vladimir N4151c
 
 ## Project Overview
 This project implements a local LLM-powered chat application with user authentication, persistent conversation history, and a single-page application (SPA) frontend. The backend is built with FastAPI, uses PostgreSQL as the primary relational database, and leverages Redis for session management and refresh token storage.
